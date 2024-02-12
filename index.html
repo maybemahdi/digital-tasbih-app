@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Tasbih App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-[poppins] bg-slate-200">
+    <main
+      class="container mx-auto my-16 flex flex-col justify-center items-center"
+    >
+      <h1
+        class="lg:mb-8 font-bold text-[42px] md:text-[70px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
+      >
+        Digital Tasbih
+      </h1>
+      <section class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div class="flex flex-col justify-center items-center bg-white rounded-lg px-[50px] py-[35px] shadow-lg">
+          <h1 class="text-[#3c3c3c] font-semibold mb-4 text-2xl">Subhanallah</h1>
+          <p id="subhanallahValue" class="text-[#747373] font-medium text-2xl mb-5">0</p>
+          <div class="flex gap-4">
+            <button id="subhanallahIncBtn" class="bg-[#25c650] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#24ae49] shadow-lg">Increment</button>
+            <button id="subhanallahdecBtn" class="bg-[#e74c4c] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#c83636] shadow-lg">Decrement</button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center bg-white rounded-lg px-[50px] py-[35px] shadow-lg">
+          <h1 class="text-[#3c3c3c] font-semibold mb-4 text-2xl">Alhamdulillah</h1>
+          <p id="alhamdulillahValue" class="text-[#747373] font-medium text-2xl mb-5">0</p>
+          <div class="flex gap-4">
+            <button id="alhamdulillahIncbtn" class="bg-[#25c650] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#24ae49] shadow-lg">Increment</button>
+            <button id="alhamdulillahDecbtn" class="bg-[#e74c4c] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#c83636] shadow-lg">Decrement</button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center bg-white rounded-lg px-[50px] py-[35px] shadow-lg">
+          <h1 class="text-[#3c3c3c] font-semibold mb-4 text-2xl">Allahu Akbar</h1>
+          <p id="allahuakbarValue" class="text-[#747373] font-medium text-2xl mb-5">0</p>
+          <div class="flex gap-4">
+            <button id="allahuakbarIncBtn" class="bg-[#25c650] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#24ae49] shadow-lg">Increment</button>
+            <button id="allahuakbarDecBtn" class="bg-[#e74c4c] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#c83636] shadow-lg">Decrement</button>
+          </div>
+        </div>
+      </section>
+      <button id="resetbtn" class="bg-[#eaa739] text-white font-medium text-[16px] px-5 py-2 rounded-md transition-all hover:bg-[#d69d2a] mt-6 shadow-lg">Reset All Tasbih</button>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
